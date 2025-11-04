@@ -1,5 +1,21 @@
-.main-title { 
-    text-align: center;
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header h1 {
+    margin-right: 10px;
+}
+
+.header button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .container {
@@ -15,10 +31,6 @@
 
 /* each grid square */
 .square {
-  /* 1/16 of the container’s width */
-  flex: 0 0 calc(100% / 16);
-  /* keep it square */
-  aspect-ratio: 1 / 1;
   border: 1px solid #eee;
   box-sizing: border-box;
 }
