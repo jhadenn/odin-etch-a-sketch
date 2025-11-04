@@ -1,3 +1,28 @@
 .main-title { 
     text-align: center;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 480px;
+    height: 480px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* each grid square */
+.square {
+  /* 1/16 of the container’s width */
+  flex: 0 0 calc(100% / 16);
+  /* keep it square */
+  aspect-ratio: 1 / 1;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+.square.hovered {
+    background-color: black;
+}
